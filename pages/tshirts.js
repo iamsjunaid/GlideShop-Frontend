@@ -5,8 +5,8 @@ const tshirts = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+        <div className="flex flex-wrap -m-4 gap-16 justify-center">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -26,7 +26,7 @@ const tshirts = () => {
               <p className="mt-1">$16.00</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -46,7 +46,7 @@ const tshirts = () => {
               <p className="mt-1">$21.15</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -66,7 +66,7 @@ const tshirts = () => {
               <p className="mt-1">$12.00</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -86,7 +86,7 @@ const tshirts = () => {
               <p className="mt-1">$18.40</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -106,7 +106,7 @@ const tshirts = () => {
               <p className="mt-1">$16.00</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -126,7 +126,7 @@ const tshirts = () => {
               <p className="mt-1">$21.15</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
@@ -146,7 +146,7 @@ const tshirts = () => {
               <p className="mt-1">$12.00</p>
             </div>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <div className="lg:w-1/5 md:w-1/2 p-4 w-4/5 border border-gray-200 rounded-lg hover:shadow-lg">
             <a className="block relative h-48 rounded overflow-hidden">
               <Image
                 src="https://www.thewalkdeal.com/cdn/shop/products/Belive-Black.jpg?v=1640675713"
