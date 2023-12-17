@@ -1,8 +1,8 @@
-import '../styles.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import '../styles.css'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
-function MyApp({ Component, pageProps }) {
+function MyApp ({ Component, pageProps }) {
   return <>
     <Navbar />
     <Component {...pageProps} />
@@ -10,4 +10,4 @@ function MyApp({ Component, pageProps }) {
   </>
 }
 
-export default MyApp;
+export default MyApp
