@@ -1,8 +1,16 @@
+import Image from 'next/image'
+
 export default function Home () {
   return (
     <main className="">
       <div className="">
-        <img src="/images/banner.png" alt="ban" />
+        <Image
+          src="/images/banner.png"
+          alt="banner"
+          width={7500}
+          height={3214}
+          className="rounded-lg"
+        />
       </div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
