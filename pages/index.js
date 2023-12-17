@@ -1,11 +1,6 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import '../styles.css';
-
 export default function Home() {
   return (
     <main className="">
-      <Navbar />
       <div className="">
         <img src="/images/banner.png" alt="ban" />
       </div>
@@ -171,7 +166,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   )
 }
