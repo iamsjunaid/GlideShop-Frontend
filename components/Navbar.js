@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsCart3 } from "react-icons/bs";
+import { BsCart3 } from 'react-icons/bs'
 import Link from 'next/link'
 
 const Navbar = () => {
@@ -14,7 +14,6 @@ const Navbar = () => {
             <Link href="/tshirts" className="mr-5 hover:text-gray-900">
               First Link
             </Link>
-
 
             <a className="mr-5 hover:text-gray-900">Second Link</a>
             <a className="mr-5 hover:text-gray-900">Third Link</a>
