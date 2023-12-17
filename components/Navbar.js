@@ -19,12 +19,20 @@ const Navbar = () => {
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <Link href="/tshirts" className="mr-5 hover:text-gray-900">
-              First Link
+              Tshirts
             </Link>
 
-            <a className="mr-5 hover:text-gray-900">Second Link</a>
-            <a className="mr-5 hover:text-gray-900">Third Link</a>
-            <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+            <Link href="/hoodies" className="mr-5 hover:text-gray-900">
+              Hoodies
+            </Link>
+
+            <Link href="/mugs" className="mr-5 hover:text-gray-900">
+              Mugs
+            </Link>
+
+            <Link href="/stickers" className="mr-5 hover:text-gray-900">
+              Stickers
+            </Link>
           </nav>
           <BsCart3 className="absolute top-8 right-4 md:static w-6 h-6 ml-2" />
         </div>
