@@ -5,6 +5,18 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.thewalkdeal.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'nobero.com'
+      },
+      {
+        protocol: 'https',
+        hostname: 'somethingsbrewing.in'
+      },
+      {
+        protocol: 'https',
+        hostname: 'redwolf.in'
       }
     ]
   }
