@@ -16,7 +16,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'redwolf.in'
+        hostname: 'www.redwolf.in'
       }
     ]
   }
