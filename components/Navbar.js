@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link href="/hoodies" className="mr-5 hover:text-[#9a4747]">
               Hoodies
             </Link>
-            <Link href="/mugs" className="mr-5 hover:text-gray-900">
+            <Link href="/mugs" className="mr-5 hover:text-[#9a4747]">
               Mugs
             </Link>
             <Link href="/stickers" className="mr-5 hover:text-gray-900">
