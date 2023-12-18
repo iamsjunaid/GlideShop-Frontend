@@ -26,7 +26,7 @@ const Navbar = () => {
             />
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link href="/tshirts" className="mr-5 hover:text-gray-900">
+            <Link href="/tshirts" className="mr-5 hover:text-[#9a4747]">
               Tshirts
             </Link>
             <Link href="/hoodies" className="mr-5 hover:text-gray-900">
