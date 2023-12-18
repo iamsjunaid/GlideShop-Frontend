@@ -48,6 +48,9 @@ const Navbar = () => {
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
               <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
+              <ol className="list-decimal">
+                
+              </ol>
             </div>
           </div>
         </div>
