@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsCart3 } from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'
-import { IoCloseOutline, IoBagHandleOutline } from 'react-icons/io5'
+import { IoCloseOutline, IoBagHandleOutline, IoTrashOutline } from 'react-icons/io5'
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
 
 const Navbar = () => {
@@ -59,7 +59,10 @@ const Navbar = () => {
                 </div>
               </li>
             </ol>
-            <button class="flex mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-2xl" />Checkout</button>
+            <div className="flex">
+              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
+              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
+            </div>
           </div>
         </div>
       )}
