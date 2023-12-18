@@ -51,6 +51,10 @@ const Navbar = () => {
               <ol className="list-decimal">
                 <li className="flex justify-center gap-16">
                   <h2 className="font-semibold text-xl">Tshirts</h2>
+                  <div className="flex items-center gap-4">
+                    <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
+                    <p>1</p>
+                  </div>
                 </li>
               </ol>
             </div>
