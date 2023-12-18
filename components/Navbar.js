@@ -54,6 +54,7 @@ const Navbar = () => {
                   <div className="flex items-center gap-4">
                     <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
                     <p>1</p>
+                    <HiOutlinePlus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
                   </div>
                 </li>
               </ol>
