@@ -47,19 +47,19 @@ const Navbar = () => {
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
-              <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
-              <ol className="list-decimal">
-                <li className="flex justify-center gap-16">
-                  <h2 className="font-semibold text-xl">Tshirts</h2>
-                  <div className="flex items-center gap-4">
-                    <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
-                    <p>1</p>
-                    <HiOutlinePlus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
-                  </div>
-                  <button class="flex mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg">Checkout</button>
-                </li>
-              </ol>
+              <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup}/>
             </div>
+            <ol className="list-decimal">
+              <li className="flex justify-center gap-16">
+                <h2 className="font-semibold text-xl">Tshirts</h2>
+                <div className="flex items-center gap-4">
+                  <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
+                  <p>1</p>
+                  <HiOutlinePlus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
+                </div>
+              </li>
+            </ol>
+            <button class="flex mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg">Checkout</button>
           </div>
         </div>
       )}
