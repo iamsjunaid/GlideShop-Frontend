@@ -50,6 +50,7 @@ const Navbar = () => {
               <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
               <ol className="list-decimal">
                 <li className="flex justify-center gap-16">
+                  <h2 className="font-semibold text-xl">Tshirts</h2>
                 </li>
               </ol>
             </div>
