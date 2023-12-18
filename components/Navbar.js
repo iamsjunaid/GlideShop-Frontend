@@ -45,6 +45,10 @@ const Navbar = () => {
       {cartPopup && (
         <div className={`bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-0 top-36 backdrop-filter backdrop-blur text-black h-screen transform transition-transform ease-in-out duration-500 ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="grid grid-rows-3 gap-4 content-between">
+            <div className="flex justify-between align-middle">
+              <h1 className="font-bold text-2xl underline">Your Cart</h1>
+              <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
+            </div>
           </div>
         </div>
       )}
