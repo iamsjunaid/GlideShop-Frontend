@@ -56,6 +56,7 @@ const Navbar = () => {
                     <p>1</p>
                     <HiOutlinePlus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
                   </div>
+                  <button class="flex mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg">Checkout</button>
                 </li>
               </ol>
             </div>
