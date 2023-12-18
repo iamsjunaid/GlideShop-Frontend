@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link href="/mugs" className="mr-5 hover:text-[#9a4747]">
               Mugs
             </Link>
-            <Link href="/stickers" className="mr-5 hover:text-gray-900">
+            <Link href="/stickers" className="mr-5 hover:text-[#9a4747]">
               Stickers
             </Link>
           </nav>
