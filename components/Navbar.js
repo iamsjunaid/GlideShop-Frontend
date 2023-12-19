@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="text-gray-600 body-font shadow-md sticky top-0">
+      <header className="body-font shadow-md sticky top-0">
         <div className="container mx-auto py-8 md:py-0 flex flex-wrap flex-col md:flex-row items-center relative">
           <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
             <Image
@@ -43,14 +43,14 @@ const Navbar = () => {
         </div>
       </header>
       {cartPopup && (
-        <div className={`bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-0 top-36 backdrop-filter backdrop-blur text-black h-screen transform transition-transform ease-in-out duration-500 ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-0 top-36 backdrop-filter backdrop-blur text-black h-screen transform transition-transform ease-in-out duration-500 border-l-2 border-b-2 border-[#9a4747] ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
               <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
             </div>
-            <ol className="list-decimal">
-              <li className="flex justify-center gap-16">
+            <ol className="list-decimal items-center">
+              <li className="flex justify-center gap-16 border-b-2 border-[##9a4747]">
                 <h2 className="font-semibold text-xl">Tshirts</h2>
                 <div className="flex items-center gap-4">
                   <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
@@ -60,8 +60,8 @@ const Navbar = () => {
               </li>
             </ol>
             <div className="flex">
-              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
-              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
+              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
+              <button class="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
             </div>
           </div>
         </div>
