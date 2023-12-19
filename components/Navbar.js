@@ -50,15 +50,29 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
               <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
             </div>
+
             <ol className="list-decimal items-center">
-              <li className="flex justify-center gap-16 border-b-2 border-[##9a4747]">
-                <h2 className="font-semibold text-xl">Tshirts</h2>
-                <div className="flex items-center gap-4">
-                  <HiOutlineMinus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
-                  <p className="font-semibold text-xl">1</p>
-                  <HiOutlinePlus className="text-black-400 rounded-lg text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" />
-                </div>
-              </li>
+
+              {Object.keys(cart).length === 0 && (<p className="text-xl">Your cart is empty!</p>)}
+
+              {Object.keys(cart).map((k) => {
+                return (
+                  <li key={k} className="flex justify-between items-center border-b-2 border-[#9a4747] py-2">
+                    <div className="flex flex-col">
+                      <h1 className="font-bold">{cart[k].name}</h1>
+                      <h2 className="text-sm">{cart[k].size} {cart[k].variant}</h2>
+                    </div>
+
+                    <div className="flex items-center">
+                      <HiOutlineMinus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => deleteItemFromCart(k)} />
+                      <h1 className="mx-2">{cart[k].qty}</h1>
+                      <HiOutlinePlus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
+                      <h1 className="mx-2">x</h1>
+                      <h1 className="mx-2">₹{cart[k].price}</h1>
+                    </div>
+                  </li>
+                )
+              })}
             </ol>
             <div className="flex">
               <button className="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
