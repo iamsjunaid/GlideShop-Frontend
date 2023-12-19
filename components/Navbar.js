@@ -61,7 +61,7 @@ const Navbar = () => {
             </ol>
             <div className="flex">
               <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
-              <button class="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 text-black focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
+              <button class="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
             </div>
           </div>
         </div>
