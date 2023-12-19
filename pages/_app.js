@@ -1,6 +1,7 @@
 import '../styles.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { useEffect, useState } from 'react'
 
 function MyApp ({ Component, pageProps }) {
   const [cart, setCart] = useState({})
