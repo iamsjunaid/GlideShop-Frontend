@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
       </header>
       {cartPopup && (
-        <div className={`cart blur-0 bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-[3.5rem] top-36 backdrop-filter backdrop-blur text-black h-3/4 transform transition-transform ease-in-out duration-500 border-2 rounded-md border-[#9a4747] ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`cart blur-0 bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-[12.5%] top-36 backdrop-filter backdrop-blur text-black h-3/4 transform transition-transform ease-in-out duration-500 border-2 rounded-md border-[#9a4747] ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
