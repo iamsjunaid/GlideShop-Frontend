@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-const Post = () => {
+const Post = ({ addToCart }) => {
   const [availibility, setAvailibility] = useState()
 
   const checkAvailibility = async () => {
