@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
       </header>
       {cartPopup && (
-        <div className={`bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-0 top-36 backdrop-filter backdrop-blur text-black h-screen transform transition-transform ease-in-out duration-500 border-l-2 border-b-2 border-[#9a4747] ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`cart blur-0 bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-[3.5rem] top-36 backdrop-filter backdrop-blur text-black h-3/4 transform transition-transform ease-in-out duration-500 border-2 rounded-md border-[#9a4747] ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
@@ -60,8 +60,8 @@ const Navbar = () => {
               </li>
             </ol>
             <div className="flex">
-              <button class="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
-              <button class="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
+              <button className="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" />Clear</button>
+              <button className="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
             </div>
           </div>
         </div>
