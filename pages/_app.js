@@ -27,6 +27,7 @@ function MyApp ({ Component, pageProps }) {
     }
     setSubTotal(subt)
   }
+
   const addToCart = (itemCode, qty, price, name, size, variant) => {
     const newCart = cart
     if (itemCode in cart) {
