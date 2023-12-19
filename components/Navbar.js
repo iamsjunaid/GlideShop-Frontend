@@ -5,7 +5,8 @@ import Image from 'next/image'
 import { IoCloseOutline, IoBagHandleOutline, IoTrashOutline } from 'react-icons/io5'
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
 
-const Navbar = () => {
+const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) => {
+  console.log(cart, addToCart, deleteItemFromCart, clearCart, subTotal)
   const [cartPopup, setCartPopup] = useState(false)
 
   const handleCartPopup = () => {
