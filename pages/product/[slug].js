@@ -198,6 +198,9 @@ const Post = () => {
             {availibility === true && (
               <p className="text-green-500">Delievery is available at your location.</p>
             )}
+            {availibility === false && (
+              <p className="text-red-500">We will be available in your area soon.</p>
+            )}
           </div>
         </div>
       </div>
