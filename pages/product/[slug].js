@@ -5,6 +5,8 @@ const Post = () => {
   const [availibility, setAvailibility] = useState()
 
   const checkAvailibility = async () => {
+    const res = await fetch('http://localhost:3000/api/pincode')
+    const pinCodes = await res.json()
 
   return (
     <section className="text-gray-600 body-font overflow-hidden">
