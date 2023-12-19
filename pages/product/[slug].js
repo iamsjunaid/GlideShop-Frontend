@@ -8,6 +8,8 @@ const Post = () => {
     const res = await fetch('http://localhost:3000/api/pincode')
     const pinCodes = await res.json()
 
+    const userPincode = parseInt(document.querySelector('#inputPincode').value)
+    if (pinCodes.includes(userPincode)) {
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
