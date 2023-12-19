@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 
 const Post = () => {
+  const [availibility, setAvailibility] = useState()
+
+  const checkAvailibility = async () => {
+    const res = await fetch('http://localhost:3000/api/pincode')
+    const pinCodes = await res.json()
+
+    const userPincode = parseInt(document.querySelector('#inputPincode').value)
+    if (pinCodes.includes(userPincode)) {
+      setAvailibility(true)
+    } else {
+      setAvailibility(false)
+    }
+  }
+
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 py-24 mx-auto">
@@ -159,7 +173,7 @@ const Post = () => {
             </div>
             <div className="flex">
               <span className="title-font font-medium text-2xl text-gray-900">
-                $58.00
+                ₹58.00
               </span>
               <button className="flex ml-auto text-white bg-[#9a4747] border-0 py-2 px-6 focus:outline-none hover:underline rounded">
                 Button
@@ -177,6 +191,16 @@ const Post = () => {
                 </svg>
               </button>
             </div>
+            <div className="flex mt-4 gap-2">
+              <input id="inputPincode" type="text" placeholder="Enter Your Pincode" className="w-3/4 bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-[#9a4747] focus:bg-transparent border border-gray-300 focus:border-[#9a4747] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              <button className="flex ml-auto text-white bg-[#9a4747] border-0 py-2 px-6 focus:outline-none hover:underline rounded" onClick={checkAvailibility}>Check</button>
+            </div>
+            {availibility === true && (
+              <p className="text-green-500">Delievery is available at your location.</p>
+            )}
+            {availibility === false && (
+              <p className="text-red-500">We will be available in your area soon.</p>
+            )}
           </div>
         </div>
       </div>
