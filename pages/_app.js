@@ -14,6 +14,17 @@ function MyApp ({ Component, pageProps }) {
     }
     setSubTotal(subt)
   }
+  const addToCart = (itemCode, qty, price, name, size, variant) => {
+    const newCart = cart
+    if (itemCode in cart) {
+      newCart[itemCode].qty += qty
+    } else {
+      newCart[itemCode] = { qty: 1, price, name, size, variant }
+    }
+
+    setCart(newCart)
+    saveCart(newCart)
+  }
 }
 
 export default MyApp
