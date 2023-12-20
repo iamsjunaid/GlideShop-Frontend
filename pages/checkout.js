@@ -54,6 +54,7 @@ const checkout = ({ cart, addToCart, deleteItemFromCart, subTotal }) => {
             )
           })}
         </ol>
+        <h1 className="font-bold text-right">Subtotal: ₹{subTotal}</h1>
       </div>
     </div>
   )
