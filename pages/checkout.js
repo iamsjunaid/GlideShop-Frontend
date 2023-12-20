@@ -35,6 +35,7 @@ const checkout = ({ cart, addToCart, deleteItemFromCart, subTotal }) => {
         />
       </div>
       <div className="w-full sm:w-1/2 flex flex-col gap-4">
+        <h4 className="text-md mr-auto">2. Review cart items.</h4>
       </div>
     </div>
   )
