@@ -45,7 +45,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
         </div>
       </header>
       {cartPopup && (
-        <div className={`cart blur-0 bg-[#fff] text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-12 top-36 backdrop-filter backdrop-blur text-black h-fit transform transition-transform ease-in-out duration-500 border-2 rounded-md border-[#9a4747] shadow-md ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`cart blur-0 bg-[#fff] z-20 text-center p-4 w-full sm:w-1/4 absolute right-0 sm:top-12 top-36 backdrop-filter backdrop-blur text-black h-fit transform transition-transform ease-in-out duration-500 border-2 rounded-md border-[#9a4747] shadow-md ${cartPopup ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
@@ -76,8 +76,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
               })}
             </ol>
             <div className="flex">
-              <button className="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg"><IoTrashOutline className="text-xl" onClick={clearCart} />Clear</button>
-              <button className="flex items-center mx-auto mt-16 text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg"><IoBagHandleOutline className="text-xl" />Checkout</button>
+              <button className="flex items-center mx-auto mt-16 border-solid border-[#9a4747] border-2 py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg" onClick={clearCart} ><IoTrashOutline className="text-xl" />Clear</button>
             </div>
           </div>
         </div>
