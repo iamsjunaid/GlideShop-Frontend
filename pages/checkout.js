@@ -36,6 +36,24 @@ const checkout = ({ cart, addToCart, deleteItemFromCart, subTotal }) => {
       </div>
       <div className="w-full sm:w-1/2 flex flex-col gap-4">
         <h4 className="text-md mr-auto">2. Review cart items.</h4>
+        <ol className="list-decimal items-center">
+          {Object.keys(cart).map((k) => {
+            return (
+              <li key={k} className="flex justify-between items-center bg-[#d8d8fe] p-4">
+                <div className="flex flex-col">
+                  <h1 className="font-bold">{cart[k].name}</h1>
+                  <h2 className="text-sm">{cart[k].size} {cart[k].variant}</h2>
+                </div>
+
+                <div className="flex items-center">
+                  <HiOutlineMinus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => deleteItemFromCart(k)} />
+                  <h1 className="mx-2">{cart[k].qty}</h1>
+                  <HiOutlinePlus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
+                </div>
+              </li>
+            )
+          })}
+        </ol>
       </div>
     </div>
   )
