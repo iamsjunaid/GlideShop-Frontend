@@ -35,6 +35,7 @@ const checkout = ({ cart, addToCart, deleteItemFromCart, subTotal }) => {
         />
       </div>
       <div className="w-full sm:w-1/2 flex flex-col gap-4">
+      </div>
     </div>
   )
 }
