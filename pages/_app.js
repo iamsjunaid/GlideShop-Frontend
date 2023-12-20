@@ -20,7 +20,7 @@ function MyApp ({ Component, pageProps }) {
   }, [cart])
 
   const saveCart = (cart) => {
-    localStorage.setItem('cart', JSON.stringify(cart)) // save cart to local storage
+    localStorage.setItem('cart', JSON.stringify(cart))
     let subt = 0
     for (const item in cart) {
       subt += cart[item].qty * cart[item].price
