@@ -68,7 +68,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
                       <HiOutlineMinus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => deleteItemFromCart(k)} />
                       <h1 className="mx-2">{cart[k].qty}</h1>
                       <HiOutlinePlus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
-                      <h1 className="mx-2">₹{cart[k].price}</h1>
+                      <h1 className="mx-2">₹{subTotal}</h1>
                     </div>
                   </li>
                 )
