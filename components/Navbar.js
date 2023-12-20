@@ -15,7 +15,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
 
   return (
     <div>
-      <header className="body-font shadow-md sticky top-0">
+      <header className="body-font shadow-md sticky top-0 z-10">
         <div className="container mx-auto py-8 md:py-0 flex flex-wrap flex-col md:flex-row items-center relative">
           <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
             <Image
