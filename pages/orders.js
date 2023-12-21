@@ -13,6 +13,13 @@ const orders = () => {
             </p>
             <div className="overflow-x-scroll sm:overflow-x-auto">
               <table className="bg-white my-4 w-full">
+                <thead>
+                  <tr>
+                    <th className="bg-[#d8d8fe] border text-left px-8 py-4">Item Name</th>
+                    <th className="bg-[#d8d8fe] border text-left px-8 py-4">Quantity</th>
+                    <th className="bg-[#d8d8fe] border text-left px-8 py-4">Price</th>
+                  </tr>
+                </thead>
         </div>
       </div>
     </section>
