@@ -76,7 +76,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
                 )
               })}
             </ol>
-            <div className="flex gap-2 w-1/2 mt-8">
+            <div className="flex gap-2 sm:w-1/2 mt-8">
               <button className="flex items-center mx-auto border-solid border-[#9a4747] border-2 h-fit py-2 px-8 text-[#9a4747] focus:outline-none hover:underline rounded text-lg" onClick={clearCart} >Clear<IoTrashOutline className="text-xl" /></button>
               <Link href={'/checkout'}>
                 <button className="flex items-center mx-auto text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg">Checkout<IoBagHandleOutline className="text-xl" /></button>
