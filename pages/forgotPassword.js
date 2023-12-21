@@ -28,3 +28,12 @@ const forgotPassword = () => {
                 Email Address
               </label>
             </div>
+            <div className="my-6">
+              <button
+                type="submit"
+                className="flex items-center justify-center w-full rounded-md bg-[#9a4747] px-3 py-4 text-white hover:underline"
+              >
+                Continue
+                <IoLogInOutline className="text-xl" />
+              </button>
+            </div>
