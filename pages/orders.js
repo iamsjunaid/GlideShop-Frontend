@@ -33,6 +33,7 @@ const orders = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
         </div>
       </div>
     </section>
