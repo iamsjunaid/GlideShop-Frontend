@@ -60,7 +60,7 @@ const checkout = ({ cart, addToCart, deleteItemFromCart, subTotal }) => {
           })}
         </ol>
         <h1 className="font-bold text-right">Subtotal: ₹{subTotal}</h1>
-        <Link href={'/checkout'}>
+        <Link href={'/orders'}>
           <button className="flex items-center gap-4 mx-auto text-white bg-[#9a4747] py-2 px-8 focus:outline-none hover:underline rounded text-lg"><span>Continue to purchase</span><FaCircleArrowRight className="text-xl" /></button>
         </Link>
       </div>
