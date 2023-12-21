@@ -42,6 +42,11 @@ const login = () => {
               >
                 Password
               </label>
+            </div>
+            <div className="flex my-6">
+              <p className="text-sm text-gray-500">Forgot password?&nbsp;</p>
+              <Link href="/forgotPassword" className="text-sm text-[#9a4747] font-semibold hover:underline">click here.</Link>
+            </div>
   )
 }
 
