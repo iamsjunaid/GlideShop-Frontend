@@ -31,6 +31,8 @@ const orders = () => {
                     <td className="border px-8 py-4">2</td>
                     <td className="border px-8 py-4">1999</td>
                   </tr>
+                </tbody>
+              </table>
         </div>
       </div>
     </section>
