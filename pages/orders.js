@@ -34,6 +34,10 @@ const orders = () => {
                 </tbody>
               </table>
             </div>
+            <div className="flex justify-between">
+              <span className="font-bold bg-[#d8d8fe] w-3/4 text-left flex items-center px-1">
+                Subtotal: ₹2498
+              </span>
         </div>
       </div>
     </section>
