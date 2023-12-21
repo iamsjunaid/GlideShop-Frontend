@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { IoCloseOutline, IoBagHandleOutline, IoTrashOutline } from 'react-icons/io5'
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
+import { BiUserCircle } from 'react-icons/bi'
 
 const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) => {
   const [cartPopup, setCartPopup] = useState(false)
