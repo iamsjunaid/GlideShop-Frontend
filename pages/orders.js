@@ -11,6 +11,8 @@ const orders = () => {
             <p className="text-gray-900 font-medium mb-4">
               Thank you! Order placed successfully. We&apos;ll be delievering your order soon.
             </p>
+            <div className="overflow-x-scroll sm:overflow-x-auto">
+              <table className="bg-white my-4 w-full">
         </div>
       </div>
     </section>
