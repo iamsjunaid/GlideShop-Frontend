@@ -6,7 +6,6 @@ import { IoCloseOutline, IoBagHandleOutline, IoTrashOutline } from 'react-icons/
 import { HiOutlinePlus, HiOutlineMinus } from 'react-icons/hi'
 
 const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) => {
-  console.log(cart, addToCart, deleteItemFromCart, clearCart, subTotal)
   const [cartPopup, setCartPopup] = useState(false)
 
   const handleCartPopup = () => {
@@ -49,7 +48,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
           <div className="grid grid-rows-3 gap-4 content-between">
             <div className="flex justify-between align-middle">
               <h1 className="font-bold text-2xl underline">Your Cart</h1>
-              <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#fff] hover:rounded-full hover:bg-gray-400" onClick={handleCartPopup} />
+              <IoCloseOutline className="text-2xl cursor-pointer hover:text-[#9a4747]" onClick={handleCartPopup} />
             </div>
 
             <ol className="list-decimal items-center">
@@ -68,7 +67,7 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
                       <HiOutlineMinus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => deleteItemFromCart(k)} />
                       <h1 className="mx-2">{cart[k].qty}</h1>
                       <HiOutlinePlus className="text-xl cursor-pointer hover:text-[#9a4747]" onClick={() => addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant)} />
-                      <h1 className="mx-2">₹{cart[k].price}</h1>
+                      <h1 className="mx-2">₹{subTotal}</h1>
                     </div>
                   </li>
                 )

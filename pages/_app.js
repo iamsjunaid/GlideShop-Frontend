@@ -9,18 +9,18 @@ function MyApp ({ Component, pageProps }) {
 
   useEffect(() => {
     try {
-      const cart = localStorage.getItem('cart')
-      if (cart) {
-        setCart(JSON.parse(cart))
+      if (localStorage.getItem(cart)) {
+        setCart(JSON.parse(localStorage.getItem(cart)))
+        saveCart(JSON.parse(localStorage.getItem(cart)))
       }
     } catch (error) {
       console.log(error)
       localStorage.clear()
     }
-  }, [])
+  }, [cart])
 
   const saveCart = (cart) => {
-    localStorage.setItem('cart', JSON.stringify(cart)) // save cart to local storage
+    localStorage.setItem('cart', JSON.stringify(cart))
     let subt = 0
     for (const item in cart) {
       subt += cart[item].qty * cart[item].price
