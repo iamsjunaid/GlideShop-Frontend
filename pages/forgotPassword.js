@@ -48,3 +48,10 @@ const forgotPassword = () => {
               </Link>
             </p>
           </form>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default forgotPassword
