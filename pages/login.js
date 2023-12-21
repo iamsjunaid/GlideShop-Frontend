@@ -56,6 +56,21 @@ const login = () => {
                 <IoLogInOutline className="text-xl" />
               </button>
             </div>
+            <p className="text-center text-sm text-gray-500">
+              Don&apos;t have an account yet?
+              {' '}
+              <Link
+                href="/signup"
+                className="font-semibold text-[#9a4747] hover:underline"
+              >
+                Sign up
+              </Link>
+              .
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
   )
 }
 
