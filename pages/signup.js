@@ -83,3 +83,16 @@ const signup = () => {
                 <BiUserPlus className="text-xl" />
               </button>
             </div>
+            <p className="text-center text-sm text-gray-500">
+              Already a member?
+              {' '}
+              <Link
+                href="/login"
+                className="font-semibold text-[#9a4747] hover:underline"
+              >
+                Login
+              </Link>
+              .
+            </p>
+          </form>
+        </div>
