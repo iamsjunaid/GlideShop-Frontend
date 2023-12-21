@@ -96,3 +96,9 @@ const signup = () => {
             </p>
           </form>
         </div>
+      </div>
+    </div>
+  )
+}
+
+export default signup
