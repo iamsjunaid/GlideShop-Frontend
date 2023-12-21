@@ -28,6 +28,14 @@ const login = () => {
                 Email Address
               </label>
             </div>
+            <div className="relative mt-6">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                className="peer peer mt-1 w-full border-b-2 border-gray-300 px-0 py-1 placeholder:text-transparent focus:border-[#9a4747] focus:outline-none"
+              />
   )
 }
 
