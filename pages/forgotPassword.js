@@ -37,3 +37,14 @@ const forgotPassword = () => {
                 <IoLogInOutline className="text-xl" />
               </button>
             </div>
+            <p className="flex justify-center items-center text-sm text-gray-500">
+              <IoArrowBackCircleOutline className="text-center text-xl"/>
+              Back to&nbsp;
+              <Link
+                href="/login"
+                className="font-semibold text-[#9a4747] hover:underline"
+              >
+                Login?
+              </Link>
+            </p>
+          </form>
