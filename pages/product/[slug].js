@@ -144,7 +144,7 @@ const Post = ({ addToCart }) => {
                 <span className="mr-3">Color</span>
                 <button className="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none" />
                 <button className="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none" />
-                <button className="border-2 border-gray-300 ml-1 bg-[#9a4747] rounded-full w-6 h-6 focus:outline-none" />
+                <button className="border-2 border-gray-300 ml-1 bg-blue-400 rounded-full w-6 h-6 focus:outline-none" />
               </div>
               <div className="flex ml-6 items-center">
                 <span className="mr-3">Size</span>
