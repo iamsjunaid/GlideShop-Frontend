@@ -20,6 +20,12 @@ const orders = () => {
                     <th className="bg-[#d8d8fe] border text-left px-8 py-4">Price</th>
                   </tr>
                 </thead>
+                <tbody>
+                  <tr>
+                    <td className="border px-8 py-4">Tshirt</td>
+                    <td className="border px-8 py-4">1</td>
+                    <td className="border px-8 py-4">499</td>
+                  </tr>
         </div>
       </div>
     </section>
