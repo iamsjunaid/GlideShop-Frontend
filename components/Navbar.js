@@ -39,8 +39,11 @@ const Navbar = ({ cart, addToCart, deleteItemFromCart, clearCart, subTotal }) =>
               Stickers
             </Link>
           </nav>
-          <BsCart3 className="absolute top-8 right-4 md:static w-6 h-6 ml-2 cursor-pointer hover:text-[#9a4747]" onClick={handleCartPopup} />
-          <span className="bg-[#9a4747] rounded-full absolute top-6 right-2 sm:top-1 sm:-right-2 text-sm w-5 h-5 text-center text-white">{Object.keys(cart).length}</span>
+          <Link href="/login">
+            <BiUserCircle className="absolute left-4 top-12 md:static w-6 h-6 cursor-pointer hover:text-[#9a4747] " />
+          </Link>
+          <BsCart3 className="absolute top-12 right-4 md:static w-6 h-6 ml-2 cursor-pointer hover:text-[#9a4747]" onClick={handleCartPopup} />
+          <span className="bg-[#9a4747] rounded-full absolute top-10 right-2 sm:top-1 sm:-right-2 text-sm w-5 h-5 text-center text-white">{Object.keys(cart).length}</span>
         </div>
       </header>
       {cartPopup && (
