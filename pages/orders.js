@@ -38,6 +38,11 @@ const orders = () => {
               <span className="font-bold bg-[#d8d8fe] w-3/4 text-left flex items-center px-1">
                 Subtotal: ₹2498
               </span>
+              <Link href={'/'}>
+                <button className="items-center w-52 gap-1 text-white bg-[#9a4747] py-2 px-12 focus:outline-none hover:underline rounded inline-flex"><span>Track order</span><FaTruckFast className="text-xl" /></button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
